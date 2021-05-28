@@ -16,8 +16,10 @@ router.post('/register',async (req,res)=>{
 
 router.post('/login',async (req,res)=>{
     try{
+        console.log('lofin')
         const user = await registerModel.findByCredentials(req.body.emaild,req.body.password)
-        res.send(user)
+
+        res.redirect('/addnewNews',+'Add New News')
     }catch(e){
         console.log(e)
     }

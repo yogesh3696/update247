@@ -1,6 +1,7 @@
 const express = require('express')
 require('../db/localdb')
 const registerRoute = require('../routes/register')
+const addNewNewsRoute = require('../routes/addNewNewsRoute')
 
 const app = express();
 
@@ -8,7 +9,6 @@ const port = process.env.port || 3000
 
 app.use(express.json())
 app.use(express.urlencoded({ extended : false }))
-
 
 
 app.set('views','./view/html/')
@@ -20,6 +20,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use(registerRoute)
+app.use(addNewNewsRoute)
 
 app.listen(port,()=>{
     console.log("server started at port ",port);
