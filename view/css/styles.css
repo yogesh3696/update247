@@ -1,0 +1,120 @@
+form#redisterForm {
+    margin-left: 100px;
+}
+div#form {
+    display: flex;
+}
+.register {
+    margin-left: 150px;
+    font-size: 32px;
+}
+input.textInput {
+    width: 96%;
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid;
+    padding-left: 14px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: .3px;
+    color: black;
+    text-align: left;
+    margin-top: 7px;
+}
+input#submit,#reset {
+    padding: 10px;
+    background: #00c4ff;
+    border-color: #00c4ff;
+    border-radius: 5px;
+}
+input#submit{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+input#reset{
+    background: #ffd900;
+    border-color: #ffd900;
+}
+hr {
+    width: 488px;
+    margin-left: 0px;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+div#login {
+    margin-left: 55px;
+}
+input#loginEmaild,#loginPassword {
+    width: 475px;
+}
+hr.loginHR {
+    width: 490px;
+}
+input#login,#resetLogin{
+    padding: 11px 20px 11px 20px;
+    border-radius: 5px;
+}
+input#login{
+    background: #319c16;
+    border-color: #319c16;
+    margin-left: 177px;
+}
+input#resetLogin {
+    background: #ff005e;
+    border-color: #ff005e;
+}
+div#form {
+    margin-top: 50px;
+}
+a.headerLink {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+label.headerSign {
+    color: white;
+    margin-left: 12px;
+}
+p#successText {
+    color: green;
+}
+header.commonHeader {
+    background-color: black;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    padding: 5px;
+    font-family: 'Montserrat';
+}
+a#update247 {
+    font-size: 28px;
+    margin-left: 21px;
+    margin-top: 11px !important;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.headerNew{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+}
+a.newsForm {
+    font-weight: bold;
+}
+.userEmail {
+    background-color: #bec5bf;
+    margin-left: 310px;
+    padding: 10px;
+    margin-right: 7px;
+}

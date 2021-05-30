@@ -7,7 +7,9 @@ router.post('/register',async (req,res)=>{
 
     try{
         await newUser.save()
-        res.send(newUser)
+        res.render('registerPage',{
+            success : "Registeration done successfully"
+        })
     }catch(e){
         console.log(e)
         res.status(500).send(e)
@@ -17,8 +19,8 @@ router.post('/register',async (req,res)=>{
 router.post('/login',async (req,res)=>{
     try{
         const user = await registerModel.findByCredentials(req.body.emaild,req.body.password)
-
-        res.redirect('/dashboard')
+        console.log("user.name>>>",user);
+        res.redirect('/addnewNews')
     }catch(e){
         console.log(e)
     }

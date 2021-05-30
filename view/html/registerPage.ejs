@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Register Page</title>    
+</head>
+<body>
+   <header>
+        <a href="/" class="headerLink">Update 24/7 Admin</a>
+        <label class="headerSign">Sign In</label>
+    </header>
+
+    <!-- <p id="successText">{{success}}</p> -->
+
+   <div id="form">
+        <div id="register">
+            <form action="/register" id="redisterForm" method="POST">
+                <label class="register">REGISTER</label>
+                <br/>
+                <br/>
+                <label for="fname">Name</label>
+                <br/>
+                <input type="text" class="textInput" id="name" name="name" />
+                <br/>
+                <br/>
+                <label for="lname">Email id</label>
+                <br/>
+                <input type="text" class="textInput" id="emaild" name="emaild" />
+                <br/>
+                <br/>
+                <label for="country">Password</label>
+                <br/>
+                <input type="text" class="textInput" id="password" name="password" />
+                <br/>
+                <HR>
+                <input id="submit" class="bFormRegist" type="submit" value="Register" />
+                <input id="reset" class="bFormRegist" type="reset" value="RESET" />
+            </form>
+        </div>   
+
+    <div id="login">
+        <form action="/login" method="POST">
+            <label class="register"> LOGIN IN </label>
+            <br/>
+            <br/>
+            <label>Email Id</label>
+            <br/>
+            <input type="text" class="textInput" id="loginEmaild" name="emaild" />
+            <br/>
+            <br/>
+            <label>Password</label>
+            <br/>
+            <input type="text" class="textInput" id="loginPassword" name="password"  />
+            <HR class="loginHR">
+            <br/>
+            <br/>
+            <input id="login" class="bFormRegist" type="submit" value="Log In" />
+            <input id="resetLogin" class="bFormRegist" type="reset" value="RESET" />
+            <HR class="loginHR">
+        </form>
+    </div>
+</div> 
+</body>
+</html>
