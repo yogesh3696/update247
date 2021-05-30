@@ -7,6 +7,41 @@
     <%- include('./common/header.ejs'); %>
 </head>
 <body>
-    <!-- <label class="addNewsLabel">Add News</label> -->
+    
+    <label class="newsLabel">Add News</label>
+
+    <div class="NewsForm">
+        <form action="/addnewNewsForm" method="POST">
+            <label>Title</label>
+            <br/>
+            <input type="text" class="title news textInput" name="title" />
+            <br/>
+            <br/>
+            <label>Description</label>
+            <br/>
+            <input type="text" class="description news textInput" name="description" />
+            <br/>
+            <br/>
+            <label>Url</label>
+            <br/>
+            <input type="text" class="url news textInput" name="url" />
+            <br/>
+            <br/>
+            <label>Url To Image</label>
+            <br/>
+            <input type="text" class="urltoimage news textInput"  name="urltoimage" />
+            <br/>
+            <br/>
+            <label>Published At</label>
+            <br/>
+            <input type="text" class="publishedAt news textInput" name="publishedAt" />
+            <br/>
+            <br/>
+            <HR class="newsHR">
+            <input id="submitNews" class="bFormRegist newsAdd" type="submit" value="Add" />
+            <input id="resetNews" class="bFormRegist RESET" type="reset" value="RESET" />
+        </form>
+    </div>
+
 </body>
 </html>
