@@ -148,3 +148,32 @@ input#submitNews {
 hr.newsHR {
     width: 941px;
 }
+th, td {
+    padding: 10px 96px 10px 10px;
+}
+tr.tabelHeader {
+    background-color: black;
+    color: white;
+}
+table.dataviewlist {
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+td {
+    font-family: 'Montserrat';
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.viewButton {
+    padding: 10px;
+    border-radius: 10px;
+}
+input#edit {
+    background-color: #ffc800;
+    border-color: #ffc800;
+}
+input#delete {
+    background: #ff005e;
+    border-color: #ff005e;
+}
